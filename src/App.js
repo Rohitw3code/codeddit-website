@@ -38,8 +38,6 @@ function App() {
             </Switch>
           </> :
             <>
-              {/* <Landing setLoginType={setIsLoggedIn} /> */}
-
               <Router>
                 <Nav setLoginType={setIsLoggedIn} />
                 <Switch>

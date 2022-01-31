@@ -1,5 +1,5 @@
 export default function Hero() {
-	return <svg className="h-[300px] md:h-auto w-full xl:w-[95%] 2xl:w-full" width="728" height="472" viewBox="0 0 728 472" fill="none" xmlns="http://www.w3.org/2000/svg">
+	return <svg className="float-right" width="728" height="472" viewBox="0 0 728 472" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g filter="url(#filter0_d_6:433)">
 			<g clip-path="url(#clip0_6:433)">
 				<rect x="16" y="12" width="696" height="440" rx="18" fill="white" />

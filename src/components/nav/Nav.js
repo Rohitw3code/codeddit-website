@@ -76,11 +76,11 @@ export default function Nav(props) {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        <Link to="/" className="nav-link active mr-10" aria-current="page" >Home</Link>
+                    <li className="nav-item mr-4">
+                        <Link to="/" className="nav-link active h4 " aria-current="page" >Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link">About</Link>
+                        <Link to="/about" className="nav-link h4">About</Link>
                     </li>
                 </ul>
                 <form className="d-flex">
