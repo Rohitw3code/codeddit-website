@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
     return (<>
-        <p className="font-sans text-2xl text-gray-400   mb-4 pt-8 mr-8 ml-8">
+        <p className="mb-4 pt-8 mr-8 ml-8">
             Codeddit is a community of developers. <br/>
             Codeddit is made for programmers who often face programming-related issues where they can ask their questions and also help out other programmers to figure out the issues and ERROR they face in their program and any tech-related questions.
             Free Programming Help<br/>

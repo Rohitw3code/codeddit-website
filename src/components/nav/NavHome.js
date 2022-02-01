@@ -4,6 +4,8 @@ import "firebase/compat/firestore";
 import firebase from "../../Firebase";
 import UserContext from "../../context/user/UserContext";
 import "firebase/compat/firestore";
+import "./NavHome.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavHome = () => {
     const userState = useContext(UserContext);
@@ -13,13 +15,18 @@ const NavHome = () => {
         <>     <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
 
-                <img src={userState.state.UserImageUrl} className="mx-8" width="50px" height="50px" style={{ borderRadius: "100px", borderColor: "#50BFE6", borderWidth: "2px", borderStyle: "solid" }} />
+
+                <div class="hstack gap-3">
+                    <img src={userState.state.UserImageUrl} className="mx-4" width="50px" height="50px" style={{ borderRadius: "100px", borderColor: "#50BFE6", borderWidth: "2px", borderStyle: "solid" }} />
+                    <i className="fa fa-bell mx-4" style={{"color":"#0d6efd","fontSize":"27px"}} aria-hidden="true"></i>
+                </div>
+
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
                         <li className="nav-item">
                             <Link to="/" className="nav-link active mr-10" aria-current="page" >Main</Link>
                         </li>

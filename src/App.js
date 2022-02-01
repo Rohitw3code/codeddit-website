@@ -6,7 +6,7 @@ import Nav from './components/nav/Nav';
 import auth from "firebase/compat/auth";
 import UserState from "./context/user/UserState";
 import LandingHome from './components/Landing/LandingHome';
-import About from './components/Landing/About';
+import About from './components/Landing/About/About';
 import Landing from './components/Landing/Landing';
 import NavHome from './components/nav/NavHome';
 import Articles from './components/Main/Articles';

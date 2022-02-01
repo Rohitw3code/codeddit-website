@@ -6,7 +6,7 @@ import { NavBar } from "../NavBar";
 import Hero from "../Hero";
 import { Route, Router, Switch } from "react-router-dom";
 import LandingHome from "./LandingHome";
-import About from "./About";
+import About from "./About/About";
 
 export default function Landing(props) {
 
