@@ -40,7 +40,7 @@ const NavHome = () => {
 
                     </ul>
                     <form className="d-flex">
-                        <button className="btn btn-outline-success" type="button">Log Out</button>
+                        <button className="btn btn-outline-success mx-4" type="button">Log Out</button>
                     </form>
                 </div>
             </div>
