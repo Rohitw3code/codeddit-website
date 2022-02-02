@@ -30,9 +30,6 @@ function App() {
               <Route exact path="/"><Home /></Route>
               <Route exact path="/articles" ><Articles /></Route>
               <Route exact path="/courses" ><Courses /></Route>
-
-              {/* <Route path="/profile"><Profile side={setShowSideNav} sideValue={showSideNav} /></Route>
-              <Route path="/newpost"><NewPost alert={(message, type) => { setAlert({ msg: message, type: type }) }} /></Route> */}
               <Route path="/groups" />
               <Route path="/settings" />
             </Switch>
