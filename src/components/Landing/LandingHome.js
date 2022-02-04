@@ -17,7 +17,7 @@ export default function LandingHome(props) {
           The ultimate <br className="container text-dark" />community <br className="hidden xl:inline" />for <span className="text-primary">programmers</span>
         </h1>
         <p className="description container text-dark-bold">Codeddit is the largest programmer community. Feel free to ask any programming related doubt directly to experts.</p>
-        <button className='open btn btn-primary' href="https://play.google.com/store/apps/details?id=com.codedditapp.codeddit&hl=en_IN&gl=US" target="_blank">Download App</button>
+        <a className='open btn btn-primary' href="https://play.google.com/store/apps/details?id=com.codedditapp.codeddit&hl=en_IN&gl=US" target="_blank">Download App</a>
         <Link to="/about" type="button" className="open btn btn-success">About</Link>
 
       </div>

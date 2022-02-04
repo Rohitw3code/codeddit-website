@@ -88,9 +88,9 @@ export default function Nav(props) {
 
 
                 </ul>
-                <form className="d-flex">
+                {/* <form className="d-flex">
                     <button  className="btn btn-outline-primary" onClick={signInWithGoogle} type="button">Sign Up</button>
-                </form>
+                </form> */}
             </div>
         </div>
     </nav>
