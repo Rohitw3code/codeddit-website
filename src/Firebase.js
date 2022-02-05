@@ -13,6 +13,26 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+// Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+
+// //---------------------------------------------------------------------
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDBJ00sG0InwirhDSkQwuHUZ9eYMYquX3A",
+//     authDomain: "codeddit.firebaseapp.com",
+//     databaseURL: "https://codeddit-default-rtdb.firebaseio.com",
+//     projectId: "codeddit",
+//     storageBucket: "codeddit.appspot.com",
+//     messagingSenderId: "881940577163",
+//     appId: "1:881940577163:web:664b997892592c0c504d8e",
+//     measurementId: "G-73RYDJ6D92"
+//   };
+
+// // Initialize Firebase
+// const app = firebase.initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+// //--------------------------------------------------------------------
 
 
 

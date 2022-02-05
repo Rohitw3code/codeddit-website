@@ -18,7 +18,6 @@ const NavHome = () => {
 
                 <div class="hstack gap-3">
                     <img src={userState.state.UserImageUrl} className="mx-4" width="50px" height="50px" style={{ borderRadius: "100px", borderColor: "#50BFE6", borderWidth: "2px", borderStyle: "solid" }} />
-                    <i className="fa fa-bell mx-4" style={{"color":"#0d6efd","fontSize":"27px"}} aria-hidden="true"></i>
                 </div>
 
 

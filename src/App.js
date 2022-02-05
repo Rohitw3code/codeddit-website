@@ -9,13 +9,13 @@ import LandingHome from './components/Landing/LandingHome';
 import About from './components/Landing/About/About';
 import Landing from './components/Landing/Landing';
 import NavHome from './components/nav/NavHome';
-import Articles from './components/Main/Articles';
-import Courses from './components/Main/Courses';
-import Home from './components/Main/Home';
+import Articles from './components/Main/Articles/Articles';
+import Courses from './components/Main/Courses/Courses';
+import Home from './components/Main/Home/Home';
 
 function App() {
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
 
 
@@ -42,7 +42,6 @@ function App() {
                   <Route exact path="/about"><About /></Route>
                 </Switch>
               </Router>
-
 
             </>}
 
