@@ -9,10 +9,11 @@ export default function Courses() {
   const [id,setId] = useState([]);
   const [isLoading,setIsLoading] = useState(true);
 
-  let ref = firebase.firestore().collection("COURSES").orderBy("PublishDate").limit(4);
+  const ref = firebase.firestore().collection("COURSES").orderBy("PublishDate").limit(4);
 
-  const loadCourse = ()=>{
-    ref.onSnapshot((course)=>{
+
+  const loadCourse = async()=>{
+    await ref.onSnapshot((course)=>{
       course.forEach((doc)=>{
           items.push(doc.data());
           id.push(doc.id);            
@@ -23,7 +24,8 @@ export default function Courses() {
 
   useEffect(()=>{
     loadCourse();
-  })
+  },[]);
+
 
 
   return (
