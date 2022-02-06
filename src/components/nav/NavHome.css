@@ -1,0 +1,13 @@
+.xpDisplay{
+    color: black;
+}
+
+.xpDiv{
+    border-radius: 10px;
+    border-style: inset;
+    padding: 5px;
+    border-width: 1px;
+    font-weight: bold;
+    background-color: rgb(220, 248, 248);
+    border-color: black;
+}

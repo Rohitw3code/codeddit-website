@@ -26,6 +26,7 @@ function App() {
         <Router>
           {isLoggedIn ? <>
           <NavHome />
+          <UserState>
             <Switch>
               <Route exact path="/"><Home /></Route>
               <Route exact path="/articles" ><Articles /></Route>
@@ -33,6 +34,7 @@ function App() {
               <Route path="/groups" />
               <Route path="/settings" />
             </Switch>
+            </UserState>
           </> :
             <>
               <Router>
