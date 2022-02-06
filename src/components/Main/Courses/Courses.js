@@ -1,39 +1,42 @@
-import React, { useEffect, useState } from 'react';
 import CourseItem from './CourseItem';
 import "firebase/compat/firestore";
 import firebase from "../../../Firebase";
 
-export default function Courses() {
 
-  const [items,setItems] = useState([]);
-  const [id,setId] = useState([]);
-  const [isLoading,setIsLoading] = useState(true);
+import React, { Component } from 'react';
+ 
+class Courses extends Component {
 
-  const ref = firebase.firestore().collection("COURSES").orderBy("PublishDate").limit(4);
+  constructor(){
+    super();
+    this.state = {
+      items : [],
+      isLoading: true,
+    }
+  this.ref = firebase.firestore().collection("COURSES").orderBy("PublishDate").limit(4);
+  }
 
-
-  const loadCourse = async()=>{
-    await ref.onSnapshot((course)=>{
+  async componentDidMount(){
+    this.setState({isLoading:true});
+    this.ref.onSnapshot((course)=>{
       course.forEach((doc)=>{
-          items.push(doc.data());
-          id.push(doc.id);            
+        this.state.items.push(doc.data());
       });
+      this.setState({items:this.state.items});
     });
   }
 
 
-  useEffect(()=>{
-    loadCourse();
-  },[]);
 
-
-
-  return (
-  <>
-  {items.map((element)=>{
-    return   <div className='container' key={element.CourseTitle}><CourseItem data = {element} /></div>
-  })}
-
-
-  </>);
+  render() { 
+    return (
+      <>
+      {this.state.items.map((element)=>{
+        return  <div className='container' key={element.CourseTitle}><CourseItem data = {element} /></div>
+      })}
+      </>
+    );
+  }
 }
+ 
+export default Courses;
