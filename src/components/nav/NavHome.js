@@ -5,7 +5,6 @@ import firebase from "../../Firebase";
 import UserContext from "../../context/user/UserContext";
 import "firebase/compat/firestore";
 import "./NavHome.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavHome = () => {
     const userState = useContext(UserContext);
