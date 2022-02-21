@@ -29,7 +29,7 @@ function App() {
           <NavHome />
           <UserState>
             <Switch>
-              <Route exact path="/"><Home /></Route>
+              <Route exact path="/"><Articles /></Route>
               <Route exact path="/articles" ><Articles /></Route>
               <Route exact path="/courses" ><Courses /></Route>
               <Route path="/groups" />
