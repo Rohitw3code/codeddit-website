@@ -17,7 +17,7 @@ const CourseItem = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{props.data.CourseTitle}</h5>
                     <p className="card-text">{props.data.CourseDescription}</p>
-                    <a  onClick={reduceXp} type="button" target="_blank" className="btn btn-primary">Enroll</a>
+                    <a  onClick={reduceXp} href={props.data.CourseLink} type="button" target="_blank" className="btn btn-primary">Enroll</a>
                 </div>
             </div>
         </>
